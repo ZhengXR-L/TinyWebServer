@@ -6,6 +6,7 @@
 有向图：
 ● 有向无环图DAG
 ● 有向循环图DCG
+```Python
 import os
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
@@ -96,3 +97,4 @@ my_graph
 response = my_graph.invoke({"messages": [HumanMessage(content="重庆天气怎么样？")]})
 for message in response['messages']:
     message.pretty_print()
+```
